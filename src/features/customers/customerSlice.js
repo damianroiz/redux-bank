@@ -24,11 +24,11 @@ const initialStateCustomer = {
 export function createCustomer(fullName, nationalId) {
     return {
       type: "customer/createCustomer",
-      payload: { fullName, nationalId, createdAt: new Date().toISOString },
+      payload: { fullName, nationalId, createdAt: new Date().toISOString() },
     };
   }
   
   export function updateName(fullName) {
-    return { type: "account/updateName", payload: fullName };
+    return { type: "customer/updateName", payload: fullName };
   }
   
